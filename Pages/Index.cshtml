@@ -1,0 +1,78 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Monitoring Dashboard";
+}
+
+<div class="dashboard">
+
+    <div class="dashboard-header">
+        <div>
+            <h1>DevSecOps Monitoring</h1>
+            <p>Application Monitoring Dashboard</p>
+        </div>
+
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            APPLICATION ONLINE
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="monitor-card">
+            <div class="card-title">Application Status</div>
+            <div class="card-value online">ONLINE</div>
+            <div class="card-description">
+                Application is running normally
+            </div>
+        </div>
+
+        <div class="monitor-card">
+            <div class="card-title">Application Version</div>
+            <div class="card-value">1.0.0</div>
+            <div class="card-description">
+                Current application release
+            </div>
+        </div>
+
+        <div class="monitor-card">
+            <div class="card-title">CPU Usage</div>
+            <div class="card-value">25%</div>
+            <div class="card-description">
+                Current CPU utilization
+            </div>
+        </div>
+
+        <div class="monitor-card">
+            <div class="card-title">Memory Usage</div>
+            <div class="card-value">42%</div>
+            <div class="card-description">
+                Current memory utilization
+            </div>
+        </div>
+
+        <div class="monitor-card">
+            <div class="card-title">Runtime</div>
+            <div class="card-value">.NET 6</div>
+            <div class="card-description">
+                Application runtime environment
+            </div>
+        </div>
+
+        <div class="monitor-card">
+            <div class="card-title">System Health</div>
+            <div class="card-value online">HEALTHY</div>
+            <div class="card-description">
+                No critical issues detected
+            </div>
+        </div>
+
+    </div>
+
+    <div class="monitor-footer">
+        <p>DevSecOps Monitoring Application</p>
+        <p>Environment: Development</p>
+    </div>
+
+</div>
